@@ -26,12 +26,13 @@ while True:
     
     if results.detections:
         for id,detection in enumerate(results.detections):
-            ## Prints id(1 if one people,1 if two people detected and so on)
+            ## Prints id(0 if one people,1 if two people detected and so on)
             ## Normalized values btw 0 and 1
                 # print(id, detection)
-            
+                
             ## Prints Detection-Score(% that a face is found) 
                 # print(detection.score)
+                
             ## Prints x,y position of detected Face
                 # print(detection.location_data.relative_bounding_box)
             
@@ -59,8 +60,8 @@ while True:
                 2,(0,255,0), 2)
     
     ## imshow has 2 parameters - window_name, image
-    ## window_name is string which represents the image to be displayed(Name of the windows which ops up for diaplying img)
-    ## image is the image to be displayed
+    ## window_name is string which represents the App_Name to be displayed(Name of the windows which ops up for diaplying img)
+    ## image is the image to be displayed - used from cap.read()
     cv2.imshow("Cam_Image", img)
     
     ## Waitkey(0) shows only a Still image untill key press

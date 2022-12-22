@@ -5,7 +5,7 @@ import time
 ## Class for major Functions and easy Call
 class FaceDetector():
     
-    ## Defines Outline and Utilites and Confidende Parameters
+    ## Defines Outline and Utilites and Confidence Parameters
     def __init__(self, minDetectCon = 0.75):
         
         self.minDetectCon = minDetectCon
