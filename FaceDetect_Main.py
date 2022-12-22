@@ -3,7 +3,7 @@ import mediapipe as mp
 import time
 
 ## Captures Video from Source, 0 for camera, or src
-## uses cap to gather data from cv2 video Capture
+## uses var-cap to gather data from cv2 video Capture
 cap = cv2.VideoCapture("./videos/vid2.mp4")
 # cap = cv2.VideoCapture(0)
 
